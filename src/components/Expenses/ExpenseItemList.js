@@ -10,6 +10,7 @@ const ExpenseItemList = (props) => {
 
   const filterdExpenseList = expenses.filter((expense) => {
     const year = expense.date.getFullYear().toString();
+    console.log("Hello");
     return year === filterValue;
   });
 
